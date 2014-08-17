@@ -1,0 +1,1 @@
+[15-Aug-2014 14:16:31 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /var/www/html/zencart/includes/modules/payment/ebanx.php on line 144

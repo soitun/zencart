@@ -1,0 +1,1 @@
+[15-Aug-2014 15:01:49 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'define' (T_STRING) in /var/www/html/zencart/includes/languages/english/modules/payment/ebanx.php on line 3

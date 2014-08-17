@@ -1,0 +1,20 @@
+---------------
+Aug 14 2014 17:19 -- inspect
+FATAL: admin configure.php is not writeable
+
+---------------
+Aug 14 2014 17:19 -- inspect
+FATAL: store configure.php is not writeable
+
+---------------
+Aug 14 2014 17:20 -- inspect
+FATAL: admin configure.php is not writeable
+
+---------------
+Aug 14 2014 17:20 -- inspect
+FATAL: store configure.php is not writeable
+
+---------------
+Aug 14 2014 17:25 -- admin_setup
+FATAL: Password not secure enough. Requires letters and numbers, and at least 7 characters.
+

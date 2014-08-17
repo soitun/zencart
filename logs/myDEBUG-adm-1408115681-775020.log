@@ -1,0 +1,1 @@
+[15-Aug-2014 12:14:41 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ebanx::check() in /var/www/html/zencart/admin666/modules.php on line 197

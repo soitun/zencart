@@ -1,0 +1,1 @@
+[15-Aug-2014 16:02:07 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /var/www/html/zencart/includes/modules/payment/as2checkout.php on line 439

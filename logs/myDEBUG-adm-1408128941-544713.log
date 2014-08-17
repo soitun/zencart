@@ -1,0 +1,1 @@
+[15-Aug-2014 15:55:41 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'extends' (T_EXTENDS), expecting ';' or '{' in /var/www/html/zencart/includes/modules/payment/as2checkout.php on line 30

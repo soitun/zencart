@@ -1,0 +1,241 @@
+---------------
+Aug 14 2014 17:19 -- inspect
+FATAL: admin configure.php is not writeable
+
+---------------
+Aug 14 2014 17:19 -- inspect
+FATAL: store configure.php is not writeable
+
+---------------
+Aug 14 2014 17:19 -- inspect
+System Inspection Results: 
+------------------------------
+NA: Webserver => Apache/2.4.7 (Ubuntu)
+NA: HTTP Host => localhost
+NA: Path_Translated => /var/www/html/zencart/zc_install/index.php(SCRIPT_FILENAME)
+NA: Real Path => /var/www/html/zencart
+NA: Server Free Disk Space => 422.2 GB
+NA: PHP O/S => Linux
+NA: PHP API Mode => apache2handler
+NA: PHP Max Execution Time per page => 30
+NA: Disabled PHP Functions => pcntl_alarm, pcntl_fork, pcntl_waitpid, pcntl_wait, pcntl_wifexited, pcntl_wifstopped, pcntl_wifsignaled, pcntl_wexitstatus, pcntl_wtermsig, pcntl_wstopsig, pcntl_signal, pcntl_signal_dispatch, pcntl_get_last_error, pcntl_strerror, pcntl_sigprocmask, pcntl_sigwaitinfo, pcntl_sigtimedwait, pcntl_exec, pcntl_getpriority, pcntl_setpriority, 
+OK: MySQL Support => ON
+OK: PHP Version => 5.5.9-1ubuntu4.3
+OK: PHP Sessions Support => ON
+OK: PHP Session.AutoStart => OFF
+OK: PHP session.use_trans_sid => OFF
+OK: Suggested SQL Cache Folder => /var/www/html/zencart/cache
+OK: PHP GD Support => ON
+OK: GD Version => GD 2.1.1-dev
+OK: PHP ZLIB Compression Support => ON
+OK: PHP OpenSSL Support => ON
+OK: PHP cURL Support => ON
+OK: CURL NON-SSL Capability => Okay
+OK: CURL SSL Capability => Okay
+OK: PHP Upload Support => ON  upload_max_filesize=2M;  post_max_size=8M
+OK: PHP Upload TMP dir => 
+WARN: Apache .htaccess Support => OFF
+NA: PHP include_path => .:/usr/share/php:/usr/share/pear
+NA: PHP SMTP destination => localhost
+NA: PHP sendmail path => /usr/sbin/sendmail -t -i 
+NA: PHP sendmail 'from' => 
+OK: PHP open_basedir restrictions => 
+OK: PHP Output Buffering (gzip) => ON
+OK: PHP XML Support => ON
+OK: PHP Session.Save_Path => /var/www/html/zencart/cache-->Writeable
+FAIL: includes/configure.php =>  <span class='errors'>Unwriteable</span>
+FAIL: admin/includes/configure.php =>  <span class='errors'>Unwriteable</span>
+OK: cache => OK 777 read/write/execute
+OK: images => OK 777 read/write/execute (INCLUDE SUBDIRECTORIES TOO)
+OK: includes/languages/english/html_includes => OK 777 read/write (INCLUDE SUBDIRECTORIES TOO)
+OK: logs => OK 777 read/write/execute
+OK: media => OK 777 read/write/execute
+OK: pub => OK 777 read/write/execute
+OK: admin/backups => OK 777 read/write
+OK: admin/images/graphs => OK 777 read/write/execute
+PHP Extensions compiled: Core, date, ereg, libxml, openssl, pcre, zlib, bcmath, bz2, calendar, ctype, dba, dom, hash, fileinfo, filter, ftp, gettext, SPL, iconv, mbstring, session, posix, Reflection, standard, shmop, SimpleXML, soap, sockets, Phar, exif, sysvmsg, sysvsem, sysvshm, tokenizer, wddx, xml, xmlreader, xmlwriter, zip, apache2handler, PDO, curl, gd, json, mcrypt, mysql, mysqli, pdo_mysql, readline, mhash, Zend OPcache
+------------------------------
+
+
+---------------
+Aug 14 2014 17:20 -- inspect
+FATAL: admin configure.php is not writeable
+
+---------------
+Aug 14 2014 17:20 -- inspect
+FATAL: store configure.php is not writeable
+
+---------------
+Aug 14 2014 17:20 -- inspect
+System Inspection Results: 
+------------------------------
+NA: Webserver => Apache/2.4.7 (Ubuntu)
+NA: HTTP Host => localhost
+NA: Path_Translated => /var/www/html/zencart/zc_install/index.php(SCRIPT_FILENAME)
+NA: Real Path => /var/www/html/zencart
+NA: Server Free Disk Space => 422.2 GB
+NA: PHP O/S => Linux
+NA: PHP API Mode => apache2handler
+NA: PHP Max Execution Time per page => 30
+NA: Disabled PHP Functions => pcntl_alarm, pcntl_fork, pcntl_waitpid, pcntl_wait, pcntl_wifexited, pcntl_wifstopped, pcntl_wifsignaled, pcntl_wexitstatus, pcntl_wtermsig, pcntl_wstopsig, pcntl_signal, pcntl_signal_dispatch, pcntl_get_last_error, pcntl_strerror, pcntl_sigprocmask, pcntl_sigwaitinfo, pcntl_sigtimedwait, pcntl_exec, pcntl_getpriority, pcntl_setpriority, 
+OK: MySQL Support => ON
+OK: PHP Version => 5.5.9-1ubuntu4.3
+OK: PHP Sessions Support => ON
+OK: PHP Session.AutoStart => OFF
+OK: PHP session.use_trans_sid => OFF
+OK: Suggested SQL Cache Folder => /var/www/html/zencart/cache
+OK: PHP GD Support => ON
+OK: GD Version => GD 2.1.1-dev
+OK: PHP ZLIB Compression Support => ON
+OK: PHP OpenSSL Support => ON
+OK: PHP cURL Support => ON
+OK: CURL NON-SSL Capability => Okay
+OK: CURL SSL Capability => Okay
+OK: PHP Upload Support => ON  upload_max_filesize=2M;  post_max_size=8M
+OK: PHP Upload TMP dir => 
+WARN: Apache .htaccess Support => OFF
+NA: PHP include_path => .:/usr/share/php:/usr/share/pear
+NA: PHP SMTP destination => localhost
+NA: PHP sendmail path => /usr/sbin/sendmail -t -i 
+NA: PHP sendmail 'from' => 
+OK: PHP open_basedir restrictions => 
+OK: PHP Output Buffering (gzip) => ON
+OK: PHP XML Support => ON
+OK: PHP Session.Save_Path => /var/www/html/zencart/cache-->Writeable
+FAIL: includes/configure.php =>  <span class='errors'>Unwriteable</span>
+FAIL: admin/includes/configure.php =>  <span class='errors'>Unwriteable</span>
+OK: cache => OK 777 read/write/execute
+OK: images => OK 777 read/write/execute (INCLUDE SUBDIRECTORIES TOO)
+OK: includes/languages/english/html_includes => OK 777 read/write (INCLUDE SUBDIRECTORIES TOO)
+OK: logs => OK 777 read/write/execute
+OK: media => OK 777 read/write/execute
+OK: pub => OK 777 read/write/execute
+OK: admin/backups => OK 777 read/write
+OK: admin/images/graphs => OK 777 read/write/execute
+PHP Extensions compiled: Core, date, ereg, libxml, openssl, pcre, zlib, bcmath, bz2, calendar, ctype, dba, dom, hash, fileinfo, filter, ftp, gettext, SPL, iconv, mbstring, session, posix, Reflection, standard, shmop, SimpleXML, soap, sockets, Phar, exif, sysvmsg, sysvsem, sysvshm, tokenizer, wddx, xml, xmlreader, xmlwriter, zip, apache2handler, PDO, curl, gd, json, mcrypt, mysql, mysqli, pdo_mysql, readline, mhash, Zend OPcache
+------------------------------
+
+
+---------------
+Aug 14 2014 17:21 -- inspect
+System Inspection Results: 
+------------------------------
+NA: Webserver => Apache/2.4.7 (Ubuntu)
+NA: HTTP Host => localhost
+NA: Path_Translated => /var/www/html/zencart/zc_install/index.php(SCRIPT_FILENAME)
+NA: Real Path => /var/www/html/zencart
+NA: Server Free Disk Space => 422.2 GB
+NA: PHP O/S => Linux
+NA: PHP API Mode => apache2handler
+NA: PHP Max Execution Time per page => 30
+NA: Disabled PHP Functions => pcntl_alarm, pcntl_fork, pcntl_waitpid, pcntl_wait, pcntl_wifexited, pcntl_wifstopped, pcntl_wifsignaled, pcntl_wexitstatus, pcntl_wtermsig, pcntl_wstopsig, pcntl_signal, pcntl_signal_dispatch, pcntl_get_last_error, pcntl_strerror, pcntl_sigprocmask, pcntl_sigwaitinfo, pcntl_sigtimedwait, pcntl_exec, pcntl_getpriority, pcntl_setpriority, 
+OK: MySQL Support => ON
+OK: PHP Version => 5.5.9-1ubuntu4.3
+OK: PHP Sessions Support => ON
+OK: PHP Session.AutoStart => OFF
+OK: PHP session.use_trans_sid => OFF
+OK: Suggested SQL Cache Folder => /var/www/html/zencart/cache
+OK: PHP GD Support => ON
+OK: GD Version => GD 2.1.1-dev
+OK: PHP ZLIB Compression Support => ON
+OK: PHP OpenSSL Support => ON
+OK: PHP cURL Support => ON
+OK: CURL NON-SSL Capability => Okay
+OK: CURL SSL Capability => Okay
+OK: PHP Upload Support => ON  upload_max_filesize=2M;  post_max_size=8M
+OK: PHP Upload TMP dir => 
+WARN: Apache .htaccess Support => OFF
+NA: PHP include_path => .:/usr/share/php:/usr/share/pear
+NA: PHP SMTP destination => localhost
+NA: PHP sendmail path => /usr/sbin/sendmail -t -i 
+NA: PHP sendmail 'from' => 
+OK: PHP open_basedir restrictions => 
+OK: PHP Output Buffering (gzip) => ON
+OK: PHP XML Support => ON
+OK: PHP Session.Save_Path => /var/www/html/zencart/cache-->Writeable
+OK: includes/configure.php =>  Writeable
+OK: admin/includes/configure.php =>  Writeable
+OK: cache => OK 777 read/write/execute
+OK: images => OK 777 read/write/execute (INCLUDE SUBDIRECTORIES TOO)
+OK: includes/languages/english/html_includes => OK 777 read/write (INCLUDE SUBDIRECTORIES TOO)
+OK: logs => OK 777 read/write/execute
+OK: media => OK 777 read/write/execute
+OK: pub => OK 777 read/write/execute
+OK: admin/backups => OK 777 read/write
+OK: admin/images/graphs => OK 777 read/write/execute
+PHP Extensions compiled: Core, date, ereg, libxml, openssl, pcre, zlib, bcmath, bz2, calendar, ctype, dba, dom, hash, fileinfo, filter, ftp, gettext, SPL, iconv, mbstring, session, posix, Reflection, standard, shmop, SimpleXML, soap, sockets, Phar, exif, sysvmsg, sysvsem, sysvshm, tokenizer, wddx, xml, xmlreader, xmlwriter, zip, apache2handler, PDO, curl, gd, json, mcrypt, mysql, mysqli, pdo_mysql, readline, mhash, Zend OPcache
+------------------------------
+
+
+---------------
+Aug 14 2014 17:21 -- inspect
+System Inspection Results: 
+------------------------------
+NA: Webserver => Apache/2.4.7 (Ubuntu)
+NA: HTTP Host => localhost
+NA: Path_Translated => /var/www/html/zencart/zc_install/index.php(SCRIPT_FILENAME)
+NA: Real Path => /var/www/html/zencart
+NA: Server Free Disk Space => 422.2 GB
+NA: PHP O/S => Linux
+NA: PHP API Mode => apache2handler
+NA: PHP Max Execution Time per page => 30
+NA: Disabled PHP Functions => pcntl_alarm, pcntl_fork, pcntl_waitpid, pcntl_wait, pcntl_wifexited, pcntl_wifstopped, pcntl_wifsignaled, pcntl_wexitstatus, pcntl_wtermsig, pcntl_wstopsig, pcntl_signal, pcntl_signal_dispatch, pcntl_get_last_error, pcntl_strerror, pcntl_sigprocmask, pcntl_sigwaitinfo, pcntl_sigtimedwait, pcntl_exec, pcntl_getpriority, pcntl_setpriority, 
+OK: MySQL Support => ON
+OK: PHP Version => 5.5.9-1ubuntu4.3
+OK: PHP Sessions Support => ON
+OK: PHP Session.AutoStart => OFF
+OK: PHP session.use_trans_sid => OFF
+OK: Suggested SQL Cache Folder => /var/www/html/zencart/cache
+OK: PHP GD Support => ON
+OK: GD Version => GD 2.1.1-dev
+OK: PHP ZLIB Compression Support => ON
+OK: PHP OpenSSL Support => ON
+OK: PHP cURL Support => ON
+OK: CURL NON-SSL Capability => Okay
+OK: CURL SSL Capability => Okay
+OK: PHP Upload Support => ON  upload_max_filesize=2M;  post_max_size=8M
+OK: PHP Upload TMP dir => 
+WARN: Apache .htaccess Support => OFF
+NA: PHP include_path => .:/usr/share/php:/usr/share/pear
+NA: PHP SMTP destination => localhost
+NA: PHP sendmail path => /usr/sbin/sendmail -t -i 
+NA: PHP sendmail 'from' => 
+OK: PHP open_basedir restrictions => 
+OK: PHP Output Buffering (gzip) => ON
+OK: PHP XML Support => ON
+OK: PHP Session.Save_Path => /var/www/html/zencart/cache-->Writeable
+OK: includes/configure.php =>  Writeable
+OK: admin/includes/configure.php =>  Writeable
+OK: cache => OK 777 read/write/execute
+OK: images => OK 777 read/write/execute (INCLUDE SUBDIRECTORIES TOO)
+OK: includes/languages/english/html_includes => OK 777 read/write (INCLUDE SUBDIRECTORIES TOO)
+OK: logs => OK 777 read/write/execute
+OK: media => OK 777 read/write/execute
+OK: pub => OK 777 read/write/execute
+OK: admin/backups => OK 777 read/write
+OK: admin/images/graphs => OK 777 read/write/execute
+PHP Extensions compiled: Core, date, ereg, libxml, openssl, pcre, zlib, bcmath, bz2, calendar, ctype, dba, dom, hash, fileinfo, filter, ftp, gettext, SPL, iconv, mbstring, session, posix, Reflection, standard, shmop, SimpleXML, soap, sockets, Phar, exif, sysvmsg, sysvsem, sysvshm, tokenizer, wddx, xml, xmlreader, xmlwriter, zip, apache2handler, PDO, curl, gd, json, mcrypt, mysql, mysqli, pdo_mysql, readline, mhash, Zend OPcache
+------------------------------
+
+
+---------------
+Aug 14 2014 17:23 -- database_setup1
+Installer - Page: database_setup -- collected information: Array
+(
+    [language] => english
+    [DIR_FS_SQL_CACHE] => /var/www/html/zencart/cache
+    [DB_TYPE] => mysql
+    [DB_PREFIX] => 
+    [DB_CHARSET] => utf8
+    [DB_SERVER] => localhost
+    [DB_SERVER_USERNAME] => *****
+    [DB_SERVER_PASSWORD] => ***private***
+    [DB_DATABASE] => zencart
+    [SQL_CACHE_METHOD] => none
+)
+
+
+---------------
+Aug 14 2014 17:25 -- admin_setup
+FATAL: Password not secure enough. Requires letters and numbers, and at least 7 characters.
+
