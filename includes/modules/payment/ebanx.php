@@ -32,9 +32,9 @@ class ebanx {
       global $db;
       global $order;
 
-      if ( ($this->enabled == true) && ((int)MODULE_PAYMENT_BITCOIN_ZONE > 0) ) {
+      if ( ($this->enabled == true) && ((int)MODULE_PAYMENT_EBANX_ZONE > 0) ) {
         $check_flag = false;
-        $check = $db->Execute("select zone_id from " . TABLE_ZONES_TO_GEO_ZONES . " where geo_zone_id = '" . MODULE_PAYMENT_BITCOIN_ZONE . "' and zone_country_id = '" . $order->billing['country']['id'] . "' order by zone_id");
+        $check = $db->Execute("select zone_id from " . TABLE_ZONES_TO_GEO_ZONES . " where geo_zone_id = '" . MODULE_PAYMENT_EBANX_ZONE . "' and zone_country_id = '" . $order->billing['country']['id'] . "' order by zone_id");
         while (!$check->EOF) {
           if ($check->fields['zone_id'] < 1) {
             $check_flag = true;
@@ -57,9 +57,10 @@ class ebanx {
     }
 
     function selection() {
-      // return array('id' => $this->code,
-      //              'module' => $this->title);
-    	return false;
+      //return array('id' => $this->code, 'module' => $this->title);
+    	return array ('id' => $this->code, 'module' => $this->title);
+
+    	
     }
 
     function pre_confirmation_check() {
@@ -190,6 +191,7 @@ class ebanx {
      		 (configuration_title, configuration_key,          configuration_value, configuration_description,    configuration_group_id, sort_order, set_function,                                         date_added) values 
      		 ('Enable TEF Method', 'MODULE_PAYMENT_EBANX_TEF', 'True',              'Enable TEF Payment Method?', '6',                    '0',        'zen_cfg_select_option(array(\'True\', \'False\'), ', now())");
      	$db->Execute("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Sort order of display.', 'MODULE_PAYMENT_EBANX_SORT_ORDER', '0', 'Sort order of display. Lowest is displayed first.', '6', '0', now())");
+     	$db->Execute("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) values ('Payment Zone', 'MODULE_PAYMENT_EBANX_ZONE', '0', 'If a zone is selected, only enable this payment method for that zone.', '6', '2', 'zen_get_zone_class_title', 'zen_cfg_pull_down_zone_classes(', now())");
     }
 
     function remove() {
@@ -208,7 +210,7 @@ class ebanx {
       // 	, 'MODULE_PAYMENT_EBANX_CCARD'
       // 	, 'MODULE_PAYMENT_EBANX_TEF');
 
-      return array('MODULE_PAYMENT_EBANX_STATUS', 'MODULE_PAYMENT_EBANX_INTEGRATIONKEY', 'MODULE_PAYMENT_EBANX_TESTMODE', 'MODULE_PAYMENT_EBANX_INSTALLMENTS', 'MODULE_PAYMENT_EBANX_MAXINSTALLMENTS', 'MODULE_PAYMENT_EBANX_INSTALLMENTSRATE', 'MODULE_PAYMENT_EBANX_BOLETO', 'MODULE_PAYMENT_EBANX_CCARD', 'MODULE_PAYMENT_EBANX_TEF');
+      return array('MODULE_PAYMENT_EBANX_STATUS', 'MODULE_PAYMENT_EBANX_INTEGRATIONKEY', 'MODULE_PAYMENT_EBANX_TESTMODE', 'MODULE_PAYMENT_EBANX_INSTALLMENTS', 'MODULE_PAYMENT_EBANX_MAXINSTALLMENTS', 'MODULE_PAYMENT_EBANX_INSTALLMENTSRATE', 'MODULE_PAYMENT_EBANX_BOLETO', 'MODULE_PAYMENT_EBANX_CCARD', 'MODULE_PAYMENT_EBANX_TEF', 'MODULE_PAYMENT_EBANX_ZONE');
     
     }
   }

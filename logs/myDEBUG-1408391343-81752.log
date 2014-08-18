@@ -1,0 +1,2 @@
+[18-Aug-2014 16:49:03 America/Sao_Paulo] PHP Warning:  require_once(bitcoin/jsonRPCClient.php): failed to open stream: No such file or directory in /var/www/html/zencart/includes/modules/payment/ebanx.php on line 74
+[18-Aug-2014 16:49:03 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required 'bitcoin/jsonRPCClient.php' (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/html/zencart/includes/modules/payment/ebanx.php on line 74
