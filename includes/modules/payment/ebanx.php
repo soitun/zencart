@@ -57,11 +57,59 @@ class ebanx {
     }
 
     function selection() {
-      //return array('id' => $this->code, 'module' => $this->title);
-    	return array ('id' => $this->code, 'module' => $this->title);
+      //return array('id' => $this->code, 'module' => $this->title); FUNCIONA
+    global $order;
 
-    	
+    if(MODULE_PAYMENT_EBANX_BOLETO == 'True'){
+    	$selection = array('id' => $this->code,
+    						'module' => $this->title,
+    						'fields' => array(array('title' => MODULE_PAYMENT_EBANX_TEXT_CUSTOMER_CPF,
+    							'field' => zen_draw_radio_field('method', 'value=')	
+
+
+
+
     }
+
+
+
+    if (MODULE_PAYMENT_EBANX_CCARD == 'True'){
+    
+
+    for ($i=1; $i<13; $i++) {
+      $expires_month[] = array('id' => sprintf('%02d', $i), 'text' => strftime('%B - (%m)',mktime(0,0,0,$i,1,2000)));
+    }
+
+    $today = getdate();
+    for ($i=$today['year']; $i < $today['year']+10; $i++) {
+      $expires_year[] = array('id' => strftime('%y',mktime(0,0,0,1,1,$i)), 'text' => strftime('%Y',mktime(0,0,0,1,1,$i)));
+    }
+
+    //$onFocus = ' onfocus="methodSelect(\'pmt-' . $this->code . '\')"';
+
+    if ($this->gateway_mode == 'offsite') {
+      $selection = array('id' => $this->code,
+                         'module' => $this->title);
+    } else {
+      $selection = array('id' => $this->code,
+                         'module' => $this->title,
+                         'fields' => array(array('title' => MODULE_PAYMENT_EBANX_TEXT_CREDIT_CARD_OWNER,
+                                                 'field' => zen_draw_input_field('authorizenet_cc_owner', $order->billing['firstname'] . ' ' . $order->billing['lastname'], 'id="'.$this->code.'-cc-owner"' . $onFocus . ' autocomplete="off"'),
+                                               'tag' => $this->code.'-cc-owner'),
+                                         array('title' => MODULE_PAYMENT_EBANX_TEXT_CREDIT_CARD_NUMBER,
+                                               'field' => zen_draw_input_field('authorizenet_cc_number', '', 'id="'.$this->code.'-cc-number"' . $onFocus . ' autocomplete="off"'),
+                                               'tag' => $this->code.'-cc-number'),
+                                         array('title' => MODULE_PAYMENT_EBANX_TEXT_CREDIT_CARD_EXPIRES,
+                                               'field' => zen_draw_pull_down_menu('authorizenet_cc_expires_month', $expires_month, strftime('%m'), 'id="'.$this->code.'-cc-expires-month"' . $onFocus) . '&nbsp;' . zen_draw_pull_down_menu('authorizenet_cc_expires_year', $expires_year, '', 'id="'.$this->code.'-cc-expires-year"' . $onFocus),
+                                               'tag' => $this->code.'-cc-expires-month')));
+      if (MODULE_PAYMENT_EBANX_USE_CVV == 'True') {
+        $selection['fields'][] = array('title' => MODULE_PAYMENT_EBANX_TEXT_CVV,
+                                       'field' => zen_draw_input_field('authorizenet_cc_cvv', '', 'size="4" maxlength="4"' . ' id="'.$this->code.'-cc-cvv"' . $onFocus . ' autocomplete="off"') . ' ' . '<a href="javascript:popupWindow(\'' . zen_href_link(FILENAME_POPUP_CVV_HELP) . '\')">' . MODULE_PAYMENT_EBANX_TEXT_POPUP_CVV_LINK . '</a>',
+                                       'tag' => $this->code.'-cc-cvv');
+      }
+    }}
+    return $selection;
+  }
 
     function pre_confirmation_check() {
       return false;
